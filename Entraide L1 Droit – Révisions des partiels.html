@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entraide L1 Droit – Révisions des partiels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f5f7;--surface:#fff;--ink:#16202e;--muted:#566275;--line:#d5dde5;--maj:#1d4e89;--maj-bg:#e3edf8;--min:#7a5a12;--min-bg:#f6edd5;--ok:#17695c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101821;--surface:#182331;--ink:#e8edf3;--muted:#9eacbd;--line:#2c3b4d;--maj:#8db9ee;--maj-bg:#1b3350;--min:#e2c26d;--min-bg:#3a3014;--ok:#5cc7b3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101821;--surface:#182331;--ink:#e8edf3;--muted:#9eacbd;--line:#2c3b4d;--maj:#8db9ee;--maj-bg:#1b3350;--min:#e2c26d;--min-bg:#3a3014;--ok:#5cc7b3;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:70px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.2;margin:0}
+a{color:var(--maj)}
+:focus-visible{outline:3px solid var(--maj);outline-offset:2px}
+nav{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding:8px 12px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--ink);padding:6px 12px;border-radius:6px;font-weight:500;font-size:.95rem}
+nav a:hover{background:var(--maj-bg)}
+main{max-width:920px;margin:0 auto;padding:0 18px 60px}
+section{padding-top:48px}
+.hero{padding-top:44px}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:700;max-width:16ch}
+.hero p{font-size:1.1rem;max-width:58ch;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{display:inline-block;padding:11px 18px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--maj);background:var(--maj);color:#fff}
+.btn.alt{background:transparent;color:var(--maj)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#0d1722}}
+h2{font-size:1.7rem;margin-bottom:6px}
+.sub{color:var(--muted);margin:0 0 20px;max-width:62ch}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.card.maj{border-left:6px solid var(--maj)}
+.card.min{border-left:6px solid var(--min)}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;padding:2px 9px;border-radius:99px;margin-bottom:8px}
+.tag.maj{background:var(--maj-bg);color:var(--maj)}
+.tag.min{background:var(--min-bg);color:var(--min)}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card ul{margin:8px 0 0;padding-left:18px}
+.card li{margin:3px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.chip{font:inherit;font-weight:500;padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
+th{font-size:.9rem;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px}
+.dot.maj{background:var(--maj)}.dot.min{background:var(--min)}
+.note{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:14px 18px;margin-top:14px;color:var(--muted)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p,details ul{margin:10px 0 0}
+.rules{counter-reset:r;list-style:none;padding:0;display:grid;gap:10px}
+.rules li{counter-increment:r;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px 12px 52px;position:relative}
+.rules li::before{content:counter(r);position:absolute;left:16px;top:12px;font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:1.3rem;color:var(--ok)}
+footer{text-align:center;color:var(--muted);padding:30px 18px;font-size:.9rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Navigation principale">
+<a href="#accueil">Accueil</a><a href="#matieres">Matières</a><a href="#planning">Planning</a><a href="#ressources">Ressources</a><a href="#referent">Devenir référent</a><a href="#regles">Règles</a>
+</nav>
+<main>
+
+<section id="accueil" class="hero">
+<h1>Les partiels arrivent. On les prépare ensemble.</h1>
+<p>Entraide gratuite entre étudiants de L1 Droit : séances de révision en ligne, fiches partagées et méthode des exercices, ouvertes à tous. Un téléphone suffit, et chaque séance est enregistrée pour celles et ceux qui ne peuvent pas se connecter.</p>
+<div class="btns">
+<a class="btn" href="#planning">Voir le planning</a>
+<a class="btn alt" href="#referent">Animer une séance</a>
+</div>
+<div class="note"><strong>Pour rejoindre :</strong> serveur Discord <em>[lien à ajouter]</em> · séances en visio via Jitsi Meet (sans compte) <em>[lien à ajouter]</em>.</div>
+</section>
+
+<section id="matieres">
+<h2>Les cinq matières</h2>
+<p class="sub">Trois matières fondamentales, qui demandent beaucoup de méthode, et deux matières mineures. Les séances des matières fondamentales sont plus nombreuses.</p>
+<div class="grid">
+<article class="card maj"><span class="tag maj">Fondamentale</span><h3>Droit des personnes</h3>
+<p>Qui est sujet de droit, et avec quelles protections.</p>
+<ul><li>Cas pratique (syllogisme)</li><li>Commentaire et fiche d’arrêt</li><li>Notions : personnalité juridique, état et capacité, droits de la personnalité, majeurs protégés</li></ul></article>
+<article class="card maj"><span class="tag maj">Fondamentale</span><h3>Histoire des institutions publiques</h3>
+<p>Comprendre l’évolution de l’État et du pouvoir.</p>
+<ul><li>Dissertation historique</li><li>Commentaire de texte</li><li>Frise : Ancien Régime, Révolution, Empires, Républiques</li></ul></article>
+<article class="card maj"><span class="tag maj">Fondamentale</span><h3>Droit constitutionnel</h3>
+<p>Les règles du pouvoir politique et de la Ve République.</p>
+<ul><li>Dissertation et questions de cours</li><li>Commentaire de décision du Conseil constitutionnel</li><li>Séparation des pouvoirs, QPC, régime parlementaire</li></ul></article>
+<article class="card min"><span class="tag min">Mineure</span><h3>Introduction au droit et juridictions</h3>
+<p>Les bases : sources du droit et organisation de la justice.</p>
+<ul><li>Hiérarchie des normes</li><li>Ordre judiciaire et ordre administratif</li><li>Fiches de définitions</li></ul></article>
+<article class="card min"><span class="tag min">Mineure</span><h3>Organisation européenne</h3>
+<p>Les institutions et le droit de l’Europe.</p>
+<ul><li>Union européenne : institutions, compétences</li><li>Conseil de l’Europe et CEDH</li><li>Questions de cours, QCM</li></ul></article>
+</div>
+</section>
+
+<section id="planning">
+<h2>Planning des séances</h2>
+<p class="sub">Une heure par séance, en visio : 10 min de rappel, 30 min d’exercice, 15 min de questions. Filtrez par matière.</p>
+<div class="chips" role="group" aria-label="Filtrer par matière" id="chips"></div>
+<div class="tw"><table><thead><tr><th>Jour</th><th>Heure</th><th>Matière</th><th>Au programme</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="note">Horaires indicatifs, à confirmer avec les référents. Le dimanche, une séance libre « questions de dernière minute » est ouverte à toutes les matières.</div>
+</section>
+
+<section id="ressources">
+<h2>Ressources et méthode</h2>
+<p class="sub">Les fiches des étudiants seront classées ici par matière. En attendant, voici les méthodes de base.</p>
+<details open><summary>Dissertation (histoire des institutions, droit constitutionnel)</summary>
+<ul><li>Définir chaque mot du sujet et en dégager l’enjeu.</li><li>Formuler une problématique, pas un simple « plan-liste ».</li><li>Annoncer un plan en deux parties et deux sous-parties, avec une transition claire.</li></ul></details>
+<details><summary>Commentaire et fiche d’arrêt (droit des personnes, droit constitutionnel)</summary>
+<ul><li>Faits, procédure, prétentions des parties.</li><li>Problème de droit : une question, au présent.</li><li>Solution de la juridiction, puis portée de la décision.</li></ul></details>
+<details><summary>Cas pratique (droit des personnes)</summary>
+<ul><li>Résumer les faits utiles, poser le problème de droit.</li><li>Majeure (règle), mineure (application aux faits), conclusion.</li><li>Répondre à chaque question posée, sans réciter tout le cours.</li></ul></details>
+<details><summary>Questions de cours et QCM (matières mineures)</summary>
+<ul><li>Fiches de définitions courtes, à relire à voix haute.</li><li>Interrogations croisées à deux : l’un pose, l’autre répond.</li></ul></details>
+<div class="note">Déposez vos fiches dans le dossier partagé <em>[lien à ajouter]</em>. Partagez vos propres synthèses ; évitez de republier tels quels les cours des enseignants ou des ouvrages.</div>
+</section>
+
+<section id="referent">
+<h2>Devenir référent</h2>
+<p class="sub">À l’aise dans une matière ? Animez une séance par semaine : vous expliquez, vous corrigez, vous aidez les autres à progresser (et vous révisez en même temps).</p>
+<div class="grid">
+<div class="card"><h3>Ce que vous faites</h3><ul><li>Une séance d’une heure par semaine</li><li>Un rappel des notions clés</li><li>Un exercice corrigé en commun</li><li>Une fiche récapitulative après la séance</li></ul></div>
+<div class="card"><h3>Pour vous proposer</h3><p>Écrivez sur le serveur Discord <em>[lien à ajouter]</em> ou au contact <em>[à ajouter]</em> en indiquant votre matière et vos disponibilités. Les L2 et L3 sont les bienvenus.</p></div>
+</div>
+</section>
+
+<section id="regles">
+<h2>Nos règles</h2>
+<ol class="rules">
+<li>Entraide pédagogique et neutre : on parle révisions, pas de prises de position sur le blocage ou les manifestations.</li>
+<li>Bienveillance : il n’y a pas de question bête, aucun jugement.</li>
+<li>Gratuité et accessibilité : audio seul possible, séances enregistrées, horaires variés.</li>
+<li>Partager ses propres fiches, respecter les droits des enseignants et des auteurs.</li>
+<li>Respect de la vie privée : pas d’enregistrement sans l’accord des participants.</li>
+</ol>
+</section>
+
+</main>
+<footer>Initiative étudiante, indépendante de l’administration. Bon courage pour les partiels !</footer>
+
+<script>
+var S=[
+{d:"Lundi",h:"19h00",m:"Droit constitutionnel",t:"maj",p:"Questions de cours et dissertation"},
+{d:"Mardi",h:"19h00",m:"Droit des personnes",t:"maj",p:"Cas pratique"},
+{d:"Mercredi",h:"19h00",m:"Histoire des institutions publiques",t:"maj",p:"Frises et dissertation historique"},
+{d:"Jeudi",h:"18h30",m:"Introduction au droit et juridictions",t:"min",p:"Hiérarchie des normes, juridictions, fiches"},
+{d:"Jeudi",h:"20h00",m:"Organisation européenne",t:"min",p:"Institutions de l’UE, questions de cours"},
+{d:"Vendredi",h:"19h00",m:"Droit constitutionnel",t:"maj",p:"Commentaire de décision"},
+{d:"Samedi",h:"10h00",m:"Droit des personnes",t:"maj",p:"Commentaire et fiche d’arrêt"},
+{d:"Samedi",h:"14h00",m:"Histoire des institutions publiques",t:"maj",p:"Commentaire de texte"}
+];
+var cur="Toutes",ms=["Toutes"];
+S.forEach(function(s){if(ms.indexOf(s.m)<0)ms.push(s.m)});
+var chips=document.getElementById("chips"),rows=document.getElementById("rows");
+function draw(){
+chips.innerHTML="";
+ms.forEach(function(m){var b=document.createElement("button");b.className="chip";b.type="button";b.textContent=m;b.setAttribute("aria-pressed",m===cur);b.onclick=function(){cur=m;draw()};chips.appendChild(b)});
+rows.innerHTML="";
+S.filter(function(s){return cur==="Toutes"||s.m===cur}).forEach(function(s){
+var tr=document.createElement("tr");
+tr.innerHTML='<td>'+s.d+'</td><td>'+s.h+'</td><td><span class="dot '+s.t+'"></span>'+s.m+'</td><td>'+s.p+'</td>';
+rows.appendChild(tr)});
+}
+draw();
+</script>
+</body>
+</html>
